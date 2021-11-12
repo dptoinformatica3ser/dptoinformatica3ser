@@ -1,5 +1,22 @@
 import Image from "next/image";
+import {useEffect} from "react"
+
 export default function Navbar() {
+  let navbar=null;
+  let cerrar=null;
+
+  useEffect(() => {
+    navbar=document.getElementById("navbar")
+    cerrar=document.getElementById("cerrar")
+  }, [])
+
+  const cerrarNav=()=>{
+      navbar.classList.toggle("navbar-mobile")
+      cerrar.classList.toggle("bi-list")
+      cerrar.classList.toggle("bi-x")
+  }
+  
+
   return (
     <header id="header" className="fixed-top">
       <div className="pepe">
@@ -45,7 +62,7 @@ export default function Navbar() {
               </a>
             </li>
           </ul>
-          <i className="bi bi-list mobile-nav-toggle"></i>
+          <i id="cerrar" className="bi bi-list mobile-nav-toggle" onClick={cerrarNav}></i>
         </nav>
 
         <a href="#appointment" className="appointment-btn scrollto">

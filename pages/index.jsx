@@ -21,7 +21,7 @@ export default function Home() {
   return (
     <div>
       <Header />
-      
+
       <Navbar />
 
       {/* Hero Section */}
@@ -91,7 +91,7 @@ export default function Home() {
                 <p></p>
 
                 <div className="icon-box">
-                  <h4>Equipo</h4>
+                  <h4 className="tituloh4">Equipo</h4>
                   <p>
                     En el Instituto de Investigación, Desarrollo e Innovación en
                     Eficiencia Energética, contamos con un equipo
@@ -250,9 +250,9 @@ export default function Home() {
               <h2 >Proyectos</h2>
             </div>
 
-            <div className="row">
-              <div className="col-lg-6">
-                <div className="member d-flex align-items-start">
+            <div className="row" >
+              <div className="col-lg-6" id="cuadroproyectoss">
+                <div className="member d-flex align-items-start" >
                   {/* <div className="pic">
                   <img
                     src="img/Sonnenstromfabrik-logo.jpg"
@@ -260,9 +260,9 @@ export default function Home() {
                     alt=""
                   />
                 </div> */}
-                  <div className="member-info">
-                    <h4>Sonnenstromfabrik (CS Wismar GmbH)</h4>
-                    <span>Fabricante Alemán de placas solares</span>
+                  <div className="member-info" className="proyectos">
+                    <h4>RED ELÉCTRICA FOTOVOLTAICA)</h4>
+                    <span>GUINEA</span>
                     <p>
                       Es el líder en calidad de vanguardia para módulos solares
                       fabricados en Alemania. Tiempo de actividad: 90%. Entrega
@@ -401,19 +401,19 @@ export default function Home() {
             <div className="section-title">
               <h2 className="titulo">Industria</h2>
               <span>
-                      Nuestra industria nace a raíz de los
-                      importantes/innumerables avances en el Instituto de
-                      Investigación, Desarrollo e Innovación. La primera fábrica
-                      del grupo empresarial en ejecutarse será la industria de
-                      fabricación de paneles fotovoltaicos, seguida de la de
-                      reciclaje de baterías, que al igual que el resto de naves
-                      y siguiendo nuestro modelo sostenible, se alimenta en su
-                      totalidad de energía fotovoltaica.
-                    </span>
+                Nuestra industria nace a raíz de los
+                importantes/innumerables avances en el Instituto de
+                Investigación, Desarrollo e Innovación. La primera fábrica
+                del grupo empresarial en ejecutarse será la industria de
+                fabricación de paneles fotovoltaicos, seguida de la de
+                reciclaje de baterías, que al igual que el resto de naves
+                y siguiendo nuestro modelo sostenible, se alimenta en su
+                totalidad de energía fotovoltaica.
+              </span>
             </div>
 
             <div className="row">
-              <div className="col-lg-6">
+              <div className="col-lg-6" className="industriacuadro">
                 <div className="member d-flex align-items-start">
                   {/* <div className="pic">
                   <img
@@ -424,64 +424,40 @@ export default function Home() {
                 </div> */}
 
                   <div className="member-info">
-                    <h4>Social</h4>
-                    
-                    <p>
-                      Es el líder en calidad de vanguardia para módulos solares
-                      fabricados en Alemania. Tiempo de actividad: 90%. Entrega
-                      a tiempo: 99,5%. Tasa de reclamación: 0,02%
+                    <span>Social</span>
+                    <p >
+                      Creación de x puestos de trabajo directos, los cuales dan soporte a las diferentes áreas de las que se compone la fábrica. Además de x puestos indirectos, produciéndose así un aumento e integración de las empresas locales.
                     </p>
-
-                    <div className="social">
-                      <a href="https://www.facebook.com/sonnenstromfabriknlbe/">
-                        <i className="ri-facebook-fill"></i>
-                      </a>
-                      <a href="https://www.youtube.com/channel/UCZJluBungY3ncjCNTo69dTg">
-                        <i className="ri-youtube-fill"></i>
-                      </a>
-                      <a href="https://www.linkedin.com/company/cs-wismar-gmbh/">
-                        {" "}
-                        <i className="ri-linkedin-box-fill"></i>{" "}
-                      </a>
+                    <button
+                      type="button"
+                      className="collapsible"
+                      onClick={() => handleCollapse("contenido-industria")}
+                    >
+                      Leer Más
+                    </button>
+                    <div id="contenido-industria" className="d-none">
+                      <p>
+                        - Compromiso con universidades y entidades públicas y privadas para impartir formación profesional actualizada y acorde a los tiempos que estamos viviendo. Todo para formar e incorporar nuevos profesionales del sector en el mercado laboral y reducir el desempleo juvenil.
+                      </p>
+                      <p>
+                        - Compromiso con universidades y entidades públicas y privadas para impartir formación profesional actualizada y acorde a los tiempos que estamos viviendo. Todo para formar e incorporar nuevos profesionales del sector en el mercado laboral y reducir el desempleo juvenil.
+                      </p>
+                      <p>
+                        - Fomento este tipo de construcciones como alternativa de viviendas sociales o urbanizaciones de lujo. Todo ello gracias a la versatilidad de la construcción modular sostenible.
+                      </p>
                     </div>
+
+
                   </div>
                 </div>
               </div>
+              <br/>
 
-              <div className="col-lg-6 mt-4 mt-lg-0">
-                <div className="member d-flex align-items-start">
-                  {/* <div className="pic">
-                  <img
-                    src="./Schweizer-logo.jpg"
-                    className="img-fluid"
-                    alt=""
-                  />
-                </div> */}
-                  <div className="member-info">
-                    <h4>Econónomico</h4>
-                    <span>Construyendo cultura y sostenibilidad</span>
-                    <p>
-                      Ernst Schweizer AG, una empresa líder en construcción
-                      metálica que ofrece una amplia gama de productos para la
-                      industria de la construcción.
-                    </p>
-                    <div className="social">
-                      <a href="https://www.facebook.com/ernstschweizer.ch/">
-                        <i className="ri-facebook-fill"></i>
-                      </a>
-                      <a href="https://www.youtube.com/channel/UCoeFz7Fjw5DjoiyI9-nRzXQ">
-                        <i className="ri-youtube-fill"></i>
-                      </a>
-                      <a href="https://www.linkedin.com/company/ernstschweizer">
-                        {" "}
-                        <i className="ri-linkedin-box-fill"></i>{" "}
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
+             
+           
 
-              <div className="col-lg-6 mt-4">
+              
+              <div className="col-lg-6 mt-4" className="separacioncuadro">
                 <div className="member d-flex align-items-start">
                   {/* <div className="pic">
                   <img
@@ -491,34 +467,18 @@ export default function Home() {
                   />
                 </div> */}
                   <div className="member-info">
-                    <h4>Técnico</h4>
-                    <span>Cargadores de coches eléctricos</span>
+                    
+                    <span>Económico</span>
                     <p>
-                      Wallbox crea sistemas de carga inteligentes que combinan
-                      tecnología de vanguardia con un diseño excepcional,
-                      gestionando la comunicación entre el coche y el cargador
-                      mediante aplicaciones fáciles de usar.
+                    - Facturación sustancial y mayor solvencia económica ciudadana, lo que implica la modernización de la sociedad española. 
                     </p>
-                    <div className="social">
-                      <a href="https://twitter.com/wallboxchargers">
-                        <i className="ri-twitter-fill"></i>
-                      </a>
-                      <a href="https://www.facebook.com/wallboxchargers/">
-                        <i className="ri-facebook-fill"></i>
-                      </a>
-                      <a href="https://www.youtube.com/channel/UCOnpqckWPs4DdxMYXm1oZkg">
-                        <i className="ri-youtube-fill"></i>
-                      </a>
-                      <a href="https://www.linkedin.com/company/wallbox-chargers/">
-                        {" "}
-                        <i className="ri-linkedin-box-fill"></i>{" "}
-                      </a>
-                    </div>
+                   
                   </div>
+                  
                 </div>
               </div>
-
-              <div className="col-lg-6 mt-4">
+              
+              <div className="col-lg-6 mt-4"  className="separacioncuadro">
                 <div className="member d-flex align-items-start">
                   {/* <div className="pic">
                   <img
@@ -528,61 +488,64 @@ export default function Home() {
                   />
                 </div> */}
                   <div className="member-info">
-                    <h4>Energético</h4>
+                    
                     <span>
-                      Soluciones empresariales de recarga de vehículos
-                      eléctricos
+                      Técnicos
                     </span>
                     <p>
-                      EVBox permite a las empresas con visión de futuro
-                      construir un futuro sostenible proporcionando soluciones
-                      de recarga de vehículos eléctricos flexibles y escalables.
+                    - Convertir a España en un país vanguardista de la innovación. Siendo un modelo de investigación y desarrollo ejemplar, fomentando la inversión de accionistas nacionales e internacionales. 
                     </p>
-                    <div className="social">
-                      <a href="https://twitter.com/evbox?lang=es">
-                        <i className="ri-twitter-fill"></i>
-                      </a>
-                      <a href="https://www.facebook.com/evboxbv/">
-                        <i className="ri-facebook-fill"></i>
-                      </a>
-                      <a href="https://www.youtube.com/channel/UCxch2CGz8QT9fGT7Sr70gRg">
-                        <i className="ri-youtube-fill"></i>
-                      </a>
-                      <a href="https://www.linkedin.com/company/evbox/?originalSubdomain=es">
-                        {" "}
-                        <i className="ri-linkedin-box-fill"></i>{" "}
-                      </a>
-                    </div>
+                   
                   </div>
                   <br />
                 </div>
               </div>
-              <div className="member-info">
-                <h4>Político</h4>
-                <span>
-                  Soluciones empresariales de recarga de vehículos eléctricos
-                </span>
-                <p>
-                  EVBox permite a las empresas con visión de futuro construir un
-                  futuro sostenible proporcionando soluciones de recarga de
-                  vehículos eléctricos flexibles y escalables.
-                </p>
-                <div className="social">
-                  <a href="https://twitter.com/evbox?lang=es">
-                    <i className="ri-twitter-fill"></i>
-                  </a>
-                  <a href="https://www.facebook.com/evboxbv/">
-                    <i className="ri-facebook-fill"></i>
-                  </a>
-                  <a href="https://www.youtube.com/channel/UCxch2CGz8QT9fGT7Sr70gRg">
-                    <i className="ri-youtube-fill"></i>
-                  </a>
-                  <a href="https://www.linkedin.com/company/evbox/?originalSubdomain=es">
-                    {" "}
-                    <i className="ri-linkedin-box-fill"></i>{" "}
-                  </a>
+
+              <div className="col-lg-6 mt-4" className="separacioncuadro">
+                <div className="member d-flex align-items-start">
+                  {/* <div className="pic">
+                  <img
+                    src="./Wallbox-Logo.png"
+                    className="img-fluid"
+                    alt=""
+                  />
+                </div> */}
+                  <div className="member-info">
+                    
+                    <span>Energético</span>
+                    <p>
+                    - Ahorro de incontables toneladas de gases nocivos para la atmosfera y desaparición de la necesidad de electrificación para soportar la potencia de los puntos de recarga, a través/mediante de la implantación del sistema de autosuficiencia energética.
+                    </p>
+                   
+                  </div>
+                  
                 </div>
               </div>
+              <div className="col-lg-6 mt-4" className="separacioncuadro">
+                <div className="member d-flex align-items-start">
+                  {/* <div className="pic">
+                  <img
+                    src="./Wallbox-Logo.png"
+                    className="img-fluid"
+                    alt=""
+                  />
+                </div> */}
+                  <div className="member-info">
+                    
+                    <span>Político</span>
+                    <p>
+                    Situar al ejecutivo del Gobierno español en un ejemplo a seguir, por su firme compromiso con el medio ambiente, su sociedad y la toma de medidas necesarias para mejorar la globalidad de su entorno. 
+                    </p>
+                   
+                  </div>
+                  
+                </div>
+              </div>
+              <div/>
+              
+
+              
+              
             </div>
           </div>
         </section>

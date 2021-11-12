@@ -37,6 +37,7 @@ h5,
 h6,
 p {
     font-family: "Montserrat", sans-serif;
+    color: white;
 }
 
 
@@ -190,6 +191,35 @@ p {
     width: 400px;
 }
 
+.botonindustria {
+    background-color: white;
+    width: 50%;
+    align-items: center;
+    display: block;
+    margin: auto;
+}
+
+.industriacuadro {
+    background: #047B8E;
+    
+    
+}
+.proyectos {
+    background: #047B8E;
+    width: 100%;
+    
+    border-radius: 10px;
+    box-shadow: 0px 2px 15px rgb(44 73 100 / 8%);
+}
+
+.separacioncuadro {
+    background: #047B8E;
+    border: 15px solid white;
+    border-radius: 10px;
+    box-shadow: 0px 2px 15px rgb(44 73 100 / 8%);
+    width: 50% !important;
+}
+
 
 /*--------------------------------------------------------------
 # Header
@@ -200,6 +230,7 @@ p {
     transition: all 0.5s;
     z-index: 997;
     box-shadow: 0px 2px 15px rgba(25, 119, 204, 0.1);
+    display: flex;
 }
 
 #header.header-scrolled {
@@ -399,6 +430,10 @@ iframe {
     color: #fff;
 }
 
+#espacio {
+    margin-top: 0rem!important;
+}
+
 .collapsible {
     background-color: white;
     color: #047B8E;
@@ -412,6 +447,8 @@ iframe {
     transition: background-color .5s;
     outline: none;
     font-size: 15px;
+    display: block;
+    margin: auto;
 }
 
 .contenido {
@@ -430,7 +467,7 @@ iframe {
 }
 
 .navbar-mobile {
-    position: fixed;
+    position: fixed !important;
     overflow: hidden;
     top: 0;
     right: 0;
@@ -787,7 +824,7 @@ section {
 
 .about .icon-boxes h4 {
     font-size: 18px;
-    color: #047B8E;
+    color: white;
     margin-bottom: 15px;
 }
 
@@ -800,6 +837,10 @@ section {
 
 .about .icon-box {
     margin-top: 40px;
+    background: #047B8E;
+}
+.tituloh4{
+    color: white;
 }
 
 .about .icon-box .icon {
@@ -1009,15 +1050,16 @@ section {
     border: 1px solid #d5e1ed;
     padding: 80px 20px;
     transition: all ease-in-out 0.3s;
+    height: 100%;
 }
 
 .services .icon-box .icon {
     margin: 0 auto;
     width: 64px;
     height: 64px;
-    background: #00917c;
+    /*background: #00917c;*/
     border-radius: 5px;
-    transition: all .3s ease-out 0s;
+    /*transition: all .3s ease-out 0s;*/
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1037,7 +1079,7 @@ section {
     top: -8px;
     height: 100%;
     width: 100%;
-    background: #badaf7;
+    /*background: #badaf7;*/
     border-radius: 5px;
     transition: all .3s ease-out 0s;
     transform: translateZ(-1px);
@@ -1061,19 +1103,19 @@ section {
 }
 
 .services .icon-box:hover {
-    background: #047B8E;
+   /* background: #047B8E;*/
 }
 
 .services .icon-box:hover .icon {
-    background: #047B8E;
+   /* background: #047B8E;*/
 }
 
 .services .icon-box:hover .icon i {
-    color: #1977cc;
+    /*color: #1977cc;*/
 }
 
 .services .icon-box:hover .icon::before {
-    background: #3291e6;
+   /* background: #3291e6;*/
 }
 
 .services .icon-box:hover h4 a,
@@ -1274,6 +1316,14 @@ section {
         background: #00917c;
     }
 }
+@media only screen and (max-width: 500px) {
+    .separacioncuadro {
+        width: 100%;
+    }
+  }
+  #cuadroproyectoss{
+      /* width: 100% !important; */
+  }
 
 
 /*--------------------------------------------------------------
@@ -1288,7 +1338,8 @@ section {
     position: relative;
     box-shadow: 0px 2px 15px rgba(44, 73, 100, 0.08);
     padding: 30px;
-    border-radius: 10px;
+    background: #047B8E;
+    border-radius: 20px;
 }
 
 .doctors .member .pic {
@@ -1413,7 +1464,8 @@ section {
 
 .industria .member span {
     display: block;
-    font-size: 15px;
+    font-size: 20px;
+    color: white;
     padding-bottom: 10px;
     position: relative;
     font-weight: 500;
@@ -1423,7 +1475,7 @@ section {
     content: '';
     position: absolute;
     display: block;
-    width: 50px;
+    width: 100px;
     height: 1px;
     background: #b2c8dd;
     bottom: 0;
